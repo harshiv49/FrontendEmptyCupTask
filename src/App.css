@@ -1,0 +1,17 @@
+/* ./src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* 
+@font-face {
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    src: url(path/to/Chivo-Regular.woff2)
+  } */
+
+  body{
+    @apply font-Chivo
+  }

@@ -54,7 +54,7 @@ const Card = ({ isWhite, institution, index, shortlistIcon }) => {
           </div>
           <div>
             <p className="text-2xl font-extrabold ml-2">
-              {price == 0 ? "$$" : price}
+              {price === 0 ? "$$" : price}
             </p>
             <p className="text-sm font-semibold">Price</p>
           </div>

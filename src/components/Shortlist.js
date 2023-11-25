@@ -3,7 +3,7 @@ import Card from "./Card";
 import { useShortlistedInstitutionContext } from "../utilities/ShortlistInstitutionsContext";
 const Shortlist=({designInstitutions})=>{
    
-    const {data,setData}=useShortlistedInstitutionContext();
+    const {data}=useShortlistedInstitutionContext();
     console.log(data)
     const shortListedDesignInstitutions = designInstitutions
     .map((institution, index) => ({ ...institution, originalIndex: index })) // Include the original index in each object
@@ -12,7 +12,7 @@ const Shortlist=({designInstitutions})=>{
     return(
     <>
         {shortListedDesignInstitutions.map((institution,index) => {
-            return <Card key={index} index={institution.originalIndex} isWhite={index%2!=0} shortlistIcon={true} institution={institution} />;
+            return <Card key={index} index={institution.originalIndex} isWhite={index%2!==0} shortlistIcon={true} institution={institution} />;
         })}
     </>
     )

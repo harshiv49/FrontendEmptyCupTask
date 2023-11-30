@@ -15,7 +15,7 @@ const App=()=>{
         // async function 
         // fetch returns a promise
         console.log("called me")
-        const response=await fetch('http://13.127.196.229:8000/institutions/list/');
+        const response=await fetch('/api/institutions/list/');
         const json=await response.json();
         const data=JSON.parse(json)
         const institutionsData = data.map(item => item.fields)
